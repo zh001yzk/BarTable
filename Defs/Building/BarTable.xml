@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="TableBase">
+    <defName>Remilia_BarTable</defName> 
+    <label>吧台桌面</label>
+    <description>吧台桌桌面，就算没有腿也能使用</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Custom3</li>
+      </linkFlags>
+      <texPath>Things/Building/Table/Remilia_BarTable20220305</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Table/Remilia_BarTable_icon</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>5</Beauty>
+    </statBases>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costStuffCount>25</costStuffCount>
+    <rotatable>false</rotatable>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites> 
+    <designationHotKey>Misc1</designationHotKey>
+    <pathCost>50</pathCost>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Remilia_BarTableLeg</defName>
+    <label>吧台桌腿</label>
+    <description>吧台桌桌腿，但其实只有好看功能</description>
+	
+	
+    <altitudeLayer>FloorCoverings</altitudeLayer>
+    <blockPlants>true</blockPlants>
+    <designationCategory>Furniture</designationCategory>
+    <blocksAltitudes>
+      <li>FloorCoverings</li>
+    </blocksAltitudes>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+	
+    <statBases>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Custom4</li>
+      </linkFlags>
+      <texPath>Things/Building/Table/Remilia_BarTableLeg20220305</texPath>
+    </graphicData>
+    <uiIconPath>Things/Building/Table/Remilia_BarTable_icon</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costStuffCount>5</costStuffCount>
+  </ThingDef>
+</Defs>
